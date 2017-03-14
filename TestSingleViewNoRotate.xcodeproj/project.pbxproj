@@ -303,6 +303,7 @@
 				C0E0145A1E76B37300640A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

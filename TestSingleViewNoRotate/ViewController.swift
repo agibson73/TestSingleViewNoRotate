@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        
         coordinator.animate(alongsideTransition: nil, completion:
             {_ in
                 UIView.setAnimationsEnabled(true)
