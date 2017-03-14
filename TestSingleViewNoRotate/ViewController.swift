@@ -35,6 +35,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: nil, completion:
+            {_ in
+                UIView.setAnimationsEnabled(true)
+        })
+        UIView.setAnimationsEnabled(false)
+        super.viewWillTransition(to: size, with: coordinator)
+    }
 
 
 }
